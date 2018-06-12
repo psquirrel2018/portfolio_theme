@@ -39,7 +39,7 @@ global $post;
             /*
             Query the post
             */
-            $args = array( 'post_type' => 'project', 'posts_per_page' => -1, 'orderby'=>'menu_order','order'=>'ASC' );
+            $args = array( 'post_type' => 'project', 'posts_per_page' => -1, 'orderby'=>'date','order'=>'DESC' );
             $loop = new WP_Query( $args );
             $portfolioResults = $loop->get_posts();
             foreach ($portfolioResults as $portfolioItem):

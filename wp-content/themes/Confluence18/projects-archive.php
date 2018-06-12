@@ -22,8 +22,14 @@ global $post;
     </div>
 </section>
 
-<section class="page-content single-project padding-bottom section-block">
+<section class="page-content single-project padding-bottom section-block" style="padding-top:60px;">
     <div class="ph-100">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1><?php echo the_title(); ?></h1>
+                <hr>
+            </div>
+        </div>
         <div id="projects" class="row mt-30">
             <!-- Start projects Loop -->
             <?php

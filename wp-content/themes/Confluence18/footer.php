@@ -1,5 +1,19 @@
-
-		<!-- ============ FOOTER START ============ -->
+<?php
+//Social Media Icons
+    $fb_url = cws_theme_get_option( 'cws_theme_facebookurl' );
+    $twitter_url = cws_theme_get_option( 'cws_theme_twitterurl' );
+    $youtube_url = cws_theme_get_option( 'cws_theme_youtubeurl' );
+    $in_url = cws_theme_get_option( 'cws_theme_linkedinurl' );
+    $gp_url = cws_theme_get_option( 'cws_theme_googleplusurl' );
+    $instagram_url = cws_theme_get_option( 'cws_theme_instagramurl' );
+    $email = cws_theme_get_option( 'cws_theme_email' );
+    $phone = cws_theme_get_option( 'cws_theme_phone' );
+    $ga_code = cws_theme_get_option( 'cws_theme_ga_code' );
+    $copyright = cws_theme_get_option( 'cws_theme_copyright' );
+    //$wildcarld_icon = cws_confluence_get_option( 'cws_confluence_wild_icon' );
+    //$wildcard_url = cws_confluence_get_option( 'cws_confluence_wild_url' );
+?>
+<!-- ============ FOOTER START ============ -->
 
 		<footer class="white">
 
@@ -47,8 +61,15 @@
 								<!-- Copyright Start -->
 								<div class="col-sm-6">
 									<div class="widget-contact black f-12" style="">
-										email: <a href="mailto:info@brendanCaffrey.com">Info@brendanCaffrey.com</a><br/>
+										<!--email: <a href="mailto:info@brendanCaffrey.com">Info@brendanCaffrey.com</a>-->
+                                        <?php if ($email != '') {?>
+                                            telephone:<a href="mailto:<?= $email; ?>"> <?= $email; ?></a></li>
+                                        <?php }; ?>
+                                        <br/>
 										<!--telephone: <a href="tel:#"></a>-->
+                                        <?php if ($phone != '') {?>
+                                            telephone:<a href="tel:<?= $phone; ?>"> <?= $phone; ?></a></li>
+                                        <?php }; ?>
 									</div>
 
 
@@ -57,15 +78,32 @@
 								<!-- Social Networks Start -->
 								<div class="col-sm-6 text-right">
 									<ul>
-										<li><a href="https://www.facebook.com/#/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-										<li><a href="https://twitter.com/#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-										<li><a href="https://plus.google.com/#" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a></li>
-										<!--<li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
-										<li><a href="#"><i class="fa fa-youtube fa-lg"></i></a></li>
-										<li><a href="#"><i class="fa fa-skype fa-lg"></i></a></li>-->
-									</ul>
+                                        <?php if ($fb_url != '') {?>
+                                            <li><a href="<?= $fb_url; ?>" class="fa fa-facebook fa-lg" target="_blank"></a></li>
+                                        <?php }; ?>
+                                        <?php if ($twitter_url != '') {?>
+                                            <li><a href="<?= $twitter_url; ?>" class="fa fa-twitter fa-lg" target="_blank"></a></li>
+                                        <?php }; ?>
+                                        <?php if ($gplus_url != '') {?>
+                                            <li><a href="<?= $gplus_url; ?>" class="fa fa-google-plus fa-lg" target="_blank"></a></li>
+                                        <?php }; ?>
+                                        <?php if ($youtube_url != '') {?>
+                                            <li><a href="<?= $youtube_url; ?>" class="fa fa-youtube fa-lg" target="_blank"</a></li>
+                                        <?php }; ?>
+                                        <?php if ($in_url != '') {?>
+                                            <li><a href="<?= $in_url; ?>" class="fa fa-linkedin fa-lg" target="_blank"></a></li>
+                                        <?php }; ?>
+                                        <?php if ($instagram_url != '') {?>
+                                            <li><a href="<?= $instagram_url; ?>" class="fa fa-instagram fa-lg" target="_blank"></a></li>
+                                        <?php }; ?>
+                                        <?php if (empty($in_url) && empty($fb_url) && empty($youtube_url) && empty($gplus_url) && empty($twitter_url) && empty($instagram_url)) {?>
+                                            <li>Add Social Media Urls to the Site Options</li>
+                                        <?php }; ?>
+                                    </ul>
 									<div class="basic-grey f-10 mt-5">
-									&copy; 2018 Brendan Caffrey Photography
+                                        <?php if ($copyright != '') {?>
+                                        <?= $copyright; ?>
+                                        <?php }; ?>
 									</div>
 								</div>
 								<!-- Social Networks End -->
@@ -77,17 +115,20 @@
 		</footer>
 
 		<!-- ============ FOOTER END ============ -->
+        <?php if ($ga_code != '') {?>
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		<!--<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', '<?= $ga_code; ?>', 'auto');
+                ga('send', 'pageview');
 
-			ga('create', 'UA-72953701-1', 'auto');
-			ga('send', 'pageview');
+            </script>
 
-		</script>-->
+        <?php }; ?>
+		<!---->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADYs4rQ5IKqs3sU49JoR-bCWy_U4En4fE"
 				type="text/javascript"></script>
 

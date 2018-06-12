@@ -170,6 +170,57 @@ class cws_Admin {
             'type'    => 'wysiwyg',
             'options' => array('textarea_rows' => 5,),
         ) );
+
+        $cmb->add_field( array(
+            'name' => esc_html__( 'Facebook URL', 'cmb2' ),
+            'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
+            'id'   => $prefix . 'cws_theme_facebookurl',
+            'type' => 'text_url',
+        ) );
+
+        $cmb->add_field( array(
+            'name' => esc_html__( 'Twitter URL', 'cmb2' ),
+            'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
+            'id'   => $prefix . 'cws_theme_twitterurl',
+            'type' => 'text_url',
+        ) );
+
+        $cmb->add_field( array(
+            'name' => esc_html__( 'Google+ URL', 'cmb2' ),
+            'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
+            'id'   => $prefix . 'cws_theme_googleplusurl',
+            'type' => 'text_url',
+        ) );
+
+        $cmb->add_field( array(
+            'name' => esc_html__( 'Linkedin URL', 'cmb2' ),
+            'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
+            'id'   => $prefix . 'cws_theme_linkedinurl',
+            'type' => 'text_url',
+        ) );
+        $cmb->add_field( array(
+            'name' => esc_html__( 'Instagram URL', 'cmb2' ),
+            'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
+            'id'   => $prefix . 'cws_theme_instagramurl',
+            'type' => 'text_url',
+        ) );
+
+        $cmb->add_field( array(
+            'name' => esc_html__( 'Google Analytics ID', 'cmb2' ),
+            'desc' => esc_html__( 'example: UA-XXXXX-Y', 'cmb2' ),
+            'id'   => $prefix . 'cws_theme_ga_code',
+            'type' => 'text_url',
+        ) );
+        $cmb->add_field( array(
+            'name' => esc_html__( 'Copyright text', 'cmb2' ),
+            'desc' => esc_html__( '&copy; 2018 Brendan Caffrey Photography', 'cmb2' ),
+            'id'   => $prefix . 'cws_theme_copyright',
+            'type' => 'text',
+            // Optionally hide the text input for the url:
+            'options' => array(
+                'url' => false,
+            ),
+        ) );
     }
 
     /**

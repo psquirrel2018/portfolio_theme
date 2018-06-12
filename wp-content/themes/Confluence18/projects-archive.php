@@ -55,7 +55,10 @@ global $post;
                     foreach ( $terms as $term ) {
                         $links[] = $term->name;
                     }
-                    $tax_links = join( " ", str_replace(' ', '-', $links));
+                    $search = array(' ', '&', 'amp;');
+                    $replace = array('-', 'and','');
+
+                    $tax_links = join( " ", str_replace($search, $replace, $links));
                     $tax = strtolower($tax_links);
 
                 endif;

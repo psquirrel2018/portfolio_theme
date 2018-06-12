@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <!-- Page Specific Head Content -->
+    <title>Confluence 18</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/plugins/font-awesome/css/font-awesome.min.css">
+
+    <!-- Typekit -->
+
+</head>
+
+<body class="home">
+
+<div class="wrapper">
+    <nav role="navigation">
+        <ul class="main-navigation">
+            <li>
+                <a class="bc-logo" href="./">
+                    <img src="<?= $logo; ?>" alt="Confluence" />
+                </a>
+                <button class="menu-button">
+                    <span></span>
+                </button>
+                <button class="search-button" type="button"></button>
+            </li>
+            <li class="with-children">
+                <a href="" id="wallet-link">Menu Item</a>
+                <ul>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </li>
+            <li class="with-children">
+                <a href="">Data</a>
+                <ul>
+                    <li><a href="">Charts</a></li>
+                    <li><a href="">Stats</a></li>
+                    <li><a href="">Markets</a></li>
+                </ul>
+            </li>
+            <li class="with-children">
+                <a href="">API</a>
+                <ul>
+                    <li><a href="">Business</a></li>
+                </ul>
+            </li>
+            <li class="with-children">
+                <a href="">About</a>
+                <ul>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </li>
+            <li class="flex-space"></li>
+            <li>
+                <form action="" class="search-form" method="GET">
+                    <input class="search-bar" name="search" placeholder="" type="text" />
+                </form>
+            </li>
+            <li>
+                <a class="wallet-button" href="#" target="_blank">Email Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="banner flex-center flex-justify flex-column center full-height">
+        <div id="video-banner" class="pos-abs" style="width: 100%; height: 100%;"
+             data-vide-bg="4" data-vide-options="posterType: 'none', loop: false, muted: false, position: 50% 50%, autoplay: false">
+        </div>
+        <h1 class="em-100 white uppercase container lm-title lh1">The World Is Now<br> Open For Business</h1>
+        <p class="em-300 light-blue type-h5 ptm container-xs mbml hidden-xs">We are on a mission to build a more open, accessible, and fair financial future, one piece of software at a time. Our technology is revolutionizing the financial services industry by empowering millions across the globe to authenticate and transact immediately and without costly intermediaries.</p>
+        <p class="em-300 light-blue type-h5 ptm container-xs mbml visible-xs">We are on a mission to build a more open, accessible, and fair financial future, one piece of software at a time.</p>
+        <div id="play-banner" class="flex-row flex-column-mobile flex-center flex-justify pointer mbvl pvtl">
+            <img class="play-button ptm-mobile" src="./assets/img/play-button.png">
+            <p class="em-500 primary uppercase type-p mbn deskonly-mlm ptm-mobile">See How</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="rects row">
+            <div class="col-md-4 col-sm-4 col-xs-12 bg-purple flex-center flex-justify">
+                <span class="stat white uppercase em-200"><span id="n-wallets"></span>M+ Wallets</span>
+            </div>
+            <div id="exchange-rates" class="col-md-4 col-sm-4 col-xs-12 bg-dark-blue flex-center flex-justify">
+                <span class="white em-200 lh1 active">1 BTC = <span id="exchange-rate-btc"></span> USD</span>
+                <span class="white em-200 lh1">1 ETH = <span id="exchange-rate-eth"></span> USD</span>
+                <span class="white em-200 lh1">1 BCH = <span id="exchange-rate-bch"></span> USD</span>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 bg-blue flex-center flex-justify">
+                <span class="stat white uppercase em-200">100M+ Transactions</span>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container home-middle prn pln">
+            <div class="col-md-8 bg-white">
+                <div class="offering">
+                    <span class="dark-blue em-200">Confluence is the world's leading software platform for digital assets. Offering the largest production block chain platform in the world, we are using new technology to build a radically better financial system.</span>
+                </div>
+                <div class="offering-icons">
+                    <div class="col-md-6">
+                        <a href="">
+                            <div class="feature flex-row flex-start flex-column-tablet pvm">
+                                <img src="./assets/img/home-analyze.png">
+                                <div class="icon-caption flex-column">
+                                    <p class="uppercase em-300">Analyze</p>
+                                    <span>CHECK THIS OUT</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="h">
+                            <div class="feature flex-row flex-start flex-column-tablet pvm">
+                                <img src="./assets/img/home-innovate.png">
+                                <div class="icon-caption innovate flex-column">
+                                    <p class="uppercase em-300">Innovate</p>
+                                    <span>First in leading edge research</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="feature flex-row flex-start flex-column-tablet pvm">
+                                <img src="./assets/img/home-buy.png">
+                                <div class="icon-caption flex-column">
+                                    <p class="uppercase em-300">BUY/SELL</p>
+                                    <span>The simple, secure and seamless way to buy and sell digital currency</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="">
+                            <div class="feature flex-row flex-start flex-column-tablet pvm">
+                                <img src="./assets/img/home-btc.png">
+                                <div class="icon-caption flex-column">
+                                    <p class="uppercase em-300">Transact</p>
+                                    <span>#1 way to buy, store & transact digital assets</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="feature flex-row flex-start flex-column-tablet pvm pb-50">
+                                <img src="./assets/img/home-build.png">
+                                <div class="icon-caption flex-column">
+                                    <p class="uppercase em-300">Build</p>
+                                    <span>Leading block chain development platform</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 bg-ultralight-blue">
+                <div class="references-slider">
+                    <div class="quotations">
+                        <div class="active">&ldquo;Blockchain is the early leader...<br>They are actually making the entire ecosystem.&rdquo;</div>
+                    </div>
+                    <div class="nav">
+		        <span>
+							<span class="arrow"></span>
+		          <div>
+
+		    				<a href="0" rel="noopener noreferrer" target="_blank">
+		    					<img src="./assets/img/nytimes.png">
+		    				</a>
+
+		    			</div>
+
+		        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-grey pvvl">
+        <div class="flex-row flex-column-mobile flex-center-mobile flex-justify-mobile display-block-tablet container pvvl">
+            <div class="flex-column prvl flex-1 center-text-mobile">
+                <h2 class="em-100 lh1 type-mlrg ls-title uppercase dark-blue">We're living in a digital world</h2>
+                <p class="em-200 medium-blue type-h5 mtm">
+                    It's time money caught up. Digital assets, like bitcoin and ether, allow users to transact directly without any third-party intermediary.
+                </p>
+            </div>
+            <div class="flex-1 bg-ultralight-blue pos-rel">
+                <div class="hidden-xs">
+                    <img class="width-100 opacity-0-mobile" src="./assets/img/new-city-graphic.png">
+                </div>
+                <div id="video-tech" class="pos-abs pos-res-mobile" style="width: 100%; height: 100%;"
+                     data-vide-bg="" data-vide-options="posterType: 'none', loop: false, muted: false, position: 50% 50%, autoplay: false">
+                </div>
+                <div id="play-tech" class="pointer flex-center flex-justify">
+                    <img class="" src="./assets/img/play-button.png">
+                    <span class="em-300 uppercase type-p center-text-mobile plm">See How It Works</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container mbml">
+            <p class="em-200 medium-blue type-h5 ptvl merchant-copy">
+                Millions of users and hundreds of thousands of merchants use digital assets. Here’s what it means for a few of them.
+            </p>
+        </div>
+
+
+        <div class="container">
+            <div class="merchant flex-column col-md-6 prn">
+                <img src="./assets/img/home-merchant1.jpg" alt="">
+                <div class="merchant-label bg-dark-blue flex-row flex-between">
+                    <div class="merchant-footer merchant-footer-left mlm">
+                        <span class="white">THE TEAM</span>
+                        <span class="white">MEETS US</span>
+                    </div>
+                    <div class="merchant-footer flex-center flex-justify">
+                        <a href="" style="padding-right: 5px;" class="primary em-400"> <img src="./assets/img/home-arrow.png" style="height:10px;padding-left:5px;" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="merchant flex-column col-md-6 pln">
+                <img src="./assets/img/home-merchant2.jpg" alt="">
+                <div class="merchant-label bg-purple flex-row flex-between">
+                    <div class="merchant-footer merchant-footer-left mlm">
+                        <span class="white">FOURTH & BROADWAY</span>
+                        <span class="white">EAGLE, CO</span>
+                    </div>
+                    <div class="merchant-footer flex-center flex-justify">
+                        <a href="" style="padding-right: 5px;" class="link-2 primary em-400">Some TEXT here <img src="./assets/img/home-arrow.png" style="height:10px;padding-left:5px;" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pvvl">
+            <div class="pvvl flex-center flex-column center">
+                <h2 class="em-100 lh1 type-mlrg ls-title uppercase dark-blue">Get The World<span>&rsquo;</span>s Most<br>Popular Digital Currency Wallet</h2>
+                <p class="em-200 medium-blue type-h4">Simple. Seamless. Secure.</p>
+                <a class="button-primary mtl" href="">Email Sign Up</a>
+                <span class="flex-row mts">
+        <span class="medium-blue hover-underline">or</span>&nbsp;<a class="primary uppercase" href="">Login</a>
+      </span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex-container">
+            <div class="footer-logo">
+                <img alt="Blockchain Logo" src="./assets/img/bc-name-and-logo-dark-blue.svg">
+            </div>
+            <div>
+                <h6>Products</h6>
+                <ol>
+                    <li><a href="" target="_blank">Wallet</a></li>
+                    <li><a href="" target="_blank">API</a></li>
+                    <li><a href="./enterprise">Business</a></li>
+                    <li><a href="./thunder">Thunder</a></li>
+                    <li><a href="./research">Research</a></li>
+                    <li><a href="" target="_blank">Explorer</a></li>
+                    <li><a href="" target="_blank">Charts</a></li>
+                    <li><a href="" target="_blank">Markets</a></li>
+                    <li><a href="" target="_blank">Stats</a></li>
+                </ol>
+            </div>
+            <div>
+                <h6>Company</h6>
+                <ol>
+                    <li><a href="./about">About</a></li>
+                    <li><a href="./team">Team</a></li>
+                    <li><a href="./careers">Careers</a></li>
+                    <li><a href="./interview">Interviewing</a></li>
+                    <li><a href="./faq">FAQ</a></li>
+                    <li><a href="./press">Press</a></li>
+                    <li><a href="">Blog</a></li>
+                </ol>
+            </div>
+            <div>
+                <h6>Support</h6>
+                <ol>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Tutorials</a></li>
+                    <li><a href="" target="_blank">Learning Portal</a></li>
+                    <li><a href="" target="_blank">Status</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="copyright">
+                <span>&copy;&nbsp;2018 Confluence All Rights Reserved.</span>
+                <a href="/privacy" target="_blank">Privacy</a>
+                <a href="/terms" target="_blank">Terms</a>
+            </div>
+            <div class="social-media">
+                <a href="" rel="noreferrer nofollow" target="_blank">
+                    <img alt="Twitter Icon" src="./assets/img/twitter-footer-logo.svg">
+                </a>
+                <a href="" rel="noreferrer nofollow" target="_blank">
+                    <img alt="LinkedIn Icon" src="./assets/img/linkedin-footer-logo.svg">
+                </a>
+                <a href="" rel="noreferrer nofollow" target="_blank">
+                    <img alt="Facebook Icon" src="./assets/img/facebook-footer-logo.svg">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="./assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="./assets/plugins/prefixfree/prefixfree.min.js"></script>
+<script type="text/javascript" src="./assets/bower_components/vide/dist/jquery.vide.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./assets/plugins/respond.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="./assets/js/pages/index+1.js"></script>
+
+<!-- JS Page Level -->
+<script type="text/javascript" src="./assets/js/pages/home.js"></script>
+</body>
+</html>

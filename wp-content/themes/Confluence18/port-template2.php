@@ -72,7 +72,7 @@ global $post;
                 <?php echo '<div class="project col-sm-6 col-md-4 mb-30 all project-item '. implode(' ', $links) .'">';?>
                 <a href="<?= get_the_post_thumbnail_url($portfolioItem->ID, 'full'); ?>" class="galleryItem" data-group="<?= implode(', ', $links); ?>" title="<?= $title;?>" data-desc="<?= $descDeets; ?>">
                     <?php echo '<img class="img-responsive" src="'. $original_image. '">'; ?>
-                    <div class="hover-overlay"><?= $title; ?> <br />Category: <?= implode(', ', $links2); ?></div>
+                    <div class="hover-overlay"><?= $title; ?></div>
                 </a>
                 <?php echo '</div>' ?>
             <?php endforeach; ?>

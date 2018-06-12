@@ -48,7 +48,7 @@
 								<div class="col-sm-6">
 									<div class="widget-contact black f-12" style="">
 										email: <a href="mailto:info@somedomain.com">Info@brendanCaffery.com</a><br/>
-										telephone: <a href="tel:3">970.8765309</a>
+										<!--telephone: <a href="tel:#"></a>-->
 									</div>
 
 

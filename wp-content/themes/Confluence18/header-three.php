@@ -58,8 +58,10 @@
                     echo '<li><a href="javascript:void(0)" title="" data-filter=".all" data-groupid="-1" class="active filter-all-btn filter-btn">All</a></li>';
                     if ( $count > 0 ){
                         foreach ( $terms2 as $term ) {
+                            $search = array(' ', '&', 'amp;');
+                            $replace = array('-', 'and','');
                             $termname = strtolower($term->name);
-                            $termname = str_replace(' ', '-', $termname);
+                            $termname = str_replace($search, $replace, $termname);
                             echo '<li style="list-style:inline;"><a href="javascript:void(0)" title="" class="filter-btn" data-groupid="'.$term->term_id.'" data-filter=".'.$termname.'">'.$term->name.'</a></li>';
                         }
                     }

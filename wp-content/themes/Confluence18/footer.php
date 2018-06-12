@@ -47,7 +47,7 @@
 								<!-- Copyright Start -->
 								<div class="col-sm-6">
 									<div class="widget-contact black f-12" style="">
-										email: <a href="mailto:info@somedomain.com">Info@brendanCaffery.com</a><br/>
+										email: <a href="mailto:info@brendanCaffrey.com">Info@brendanCaffrey.com</a><br/>
 										<!--telephone: <a href="tel:#"></a>-->
 									</div>
 
@@ -65,7 +65,7 @@
 										<li><a href="#"><i class="fa fa-skype fa-lg"></i></a></li>-->
 									</ul>
 									<div class="basic-grey f-10 mt-5">
-									&copy; 2018 Brendan Caffery Photography
+									&copy; 2018 Brendan Caffrey Photography
 									</div>
 								</div>
 								<!-- Social Networks End -->

@@ -17,7 +17,7 @@
 
 <header class="header-type-2">
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row ph-90">
 			<div class="col-md-12">
 				<div class="header-navigation">
 					<div class="logo-top">

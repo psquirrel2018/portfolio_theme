@@ -9,7 +9,7 @@ get_header();
 <section id="rooms-content2">
 	<div class="fullwidthbanner-container ph-100" style="width:100%; height:100%;">
 		<div class="row">
-			<div class="col-xs-12" style="width: 100%; height:400px; float: left; margin-right: -100%;margin-top:50px; position: relative; opacity: 1; display: block; z-index: 2;">
+			<div class="col-xs-12" style="width: 100%; max-height:400px; float: left; margin-right: -100%;margin-top:50px; position: relative; opacity: 1; display: block; z-index: 2;">
 				<?php
 				$postThumbID = get_post_thumbnail_id( get_the_ID() );
 				$image_attributes = wp_get_attachment_image_src( $postThumbID, 'full' );

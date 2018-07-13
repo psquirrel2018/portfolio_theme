@@ -125,7 +125,7 @@ class cws_Admin {
 
         // LOGO file uploaders
         $cmb->add_field( array(
-            'name'    => ' Site Logo',
+            'name'    => 'Site Logo',
             'desc'    => 'Upload an image or enter an URL.',
             'id'      => 'cws_theme_logo',
             'type'    => 'file',

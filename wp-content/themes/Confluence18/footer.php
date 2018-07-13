@@ -60,23 +60,25 @@
 							<div class="row">
 								<!-- Copyright Start -->
 								<div class="col-sm-6">
-									<div class="widget-contact black f-12" style="">
-										<!--email: <a href="mailto:info@brendanCaffrey.com">Info@brendanCaffrey.com</a>-->
-                                        <?php if ($email != '') {?>
-                                            telephone:<a href="mailto:<?= $email; ?>"> <?= $email; ?></a></li>
+                                    <div class="basic-grey f-10 mt-5">
+                                        <?php if ($copyright != '') {?>
+                                            <?= $copyright; ?>
                                         <?php }; ?>
-                                        <br/>
-										<!--telephone: <a href="tel:#"></a>-->
-                                        <?php if ($phone != '') {?>
-                                            telephone:<a href="tel:<?= $phone; ?>"> <?= $phone; ?></a></li>
-                                        <?php }; ?>
-									</div>
-
-
-								</div>
+                                    </div>
+                                </div>
 								<!-- Copyright End -->
 								<!-- Social Networks Start -->
 								<div class="col-sm-6 text-right">
+                                    <div class="widget-contact black f-12" style="">
+                                        <?php if ($email != '') {?>
+                                            email:<a href="mailto:<?= $email; ?>"> <?= $email; ?></a>
+                                        <?php }; ?>
+                                        <br/>
+                                        <!--telephone: <a href="tel:#"></a>-->
+                                        <?php if ($phone != '') {?>
+                                            telephone:<a href="tel:<?= $phone; ?>"> <?= $phone; ?></a>
+                                        <?php }; ?>
+                                    </div>
 									<ul>
                                         <?php if ($fb_url != '') {?>
                                             <li><a href="<?= $fb_url; ?>" class="fa fa-facebook fa-lg" target="_blank"></a></li>
@@ -90,9 +92,7 @@
                                         <?php if ($youtube_url != '') {?>
                                             <li><a href="<?= $youtube_url; ?>" class="fa fa-youtube fa-lg" target="_blank"</a></li>
                                         <?php }; ?>
-                                        <?php if ($in_url != '') {?>
-                                            <li><a href="<?= $in_url; ?>" class="fa fa-linkedin fa-lg" target="_blank"></a></li>
-                                        <?php }; ?>
+
                                         <?php if ($instagram_url != '') {?>
                                             <li><a href="<?= $instagram_url; ?>" class="fa fa-instagram fa-lg" target="_blank"></a></li>
                                         <?php }; ?>
@@ -100,11 +100,7 @@
                                             <li>Add Social Media Urls to the Site Options</li>
                                         <?php }; ?>
                                     </ul>
-									<div class="basic-grey f-10 mt-5">
-                                        <?php if ($copyright != '') {?>
-                                        <?= $copyright; ?>
-                                        <?php }; ?>
-									</div>
+
 								</div>
 								<!-- Social Networks End -->
 							</div>
